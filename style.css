@@ -1,0 +1,27 @@
+body {
+  background-color: red;
+  display: grid;
+  font-size: 80%;
+  grid-template-areas:
+  'small'
+  'medium'
+  'large';
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px){
+  body {
+    background-color: green;
+    font-size: 90%;
+    grid-template-areas:
+    'small large'
+    'medium large';
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    background-color: blue;
+    grid-template-areas: 'small medium large';
+    font-size: 100%;
+  }
+}
